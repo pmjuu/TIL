@@ -1,4 +1,4 @@
 # Today I Learned
 ## Algorithm
 ## Python
-[basic](./Python/basic.py)
+[새로 알게된 내용 틈틈이 기록하기](./Python/basic note.py)
