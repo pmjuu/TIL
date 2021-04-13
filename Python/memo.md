@@ -25,6 +25,5 @@ def solution(mylist):
     return answer
 
 def solution(mylist):
-    answer = list(map(lambda x: len(x), mylist))  #map()을 list()로 묶어줘야 list로 출력됨.
-    return answer
+    return list(map(len, mylist))  #map()을 list()로 묶어줘야 list로 출력됨.
 ```
