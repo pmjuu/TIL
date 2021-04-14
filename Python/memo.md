@@ -36,7 +36,8 @@ def solution(mylist):
 a = 7
 b = 5
 print(a//b, a%b)       -> 1 2
-print(*divmod(a, b))   -> (1, 2)
+print(divmod(a, b))    -> (1, 2)
+print(*divmod(a, b))   -> 1 2
 
 >>> divmod(3,11)       #몫을 일의자리까지만 출력
 (0, 3)
