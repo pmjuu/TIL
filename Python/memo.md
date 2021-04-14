@@ -2,15 +2,7 @@
 ```py
 print(4/2, type(4/2))     -> 2.0 float
 print(4//2, type(4//2))   -> 2 int
-```
-``` py
-data = [1, 9, 2, 3]
-print(data)
-print(data[::-1]) #반대순서로 출력
-```
-[1, 9, 2, 3]   
-[3, 2, 9, 1]   
-   
+```   
 ### sort() sorted() 차이점
 ```py
 a = [1,4,3,2]
