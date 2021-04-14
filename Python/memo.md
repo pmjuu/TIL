@@ -27,3 +27,21 @@ def solution(mylist):
 def solution(mylist):
     return list(map(len, mylist))  #map()을 list()로 묶어줘야 list로 출력됨.
 ```
+
+### divmod(x,y)
+두 숫자를 인자로 전달 받아 첫번째 인자를 두번째 인자로 나눈 몫과 나머지를 tuple 형식으로 반환한다.   
+
+출처: https://technote.kr/259 [TechNote.kr]
+``` py
+a = 7
+b = 5
+print(a//b, a%b)
+print(*divmod(a, b))
+
+>>> divmod(3,11)       #몫을 일의자리까지만 출력
+(0, 3)
+>>> divmod(3.0,11.0)   #float 형식으로 출력을해도 마찬가지
+(0.0, 3.0)
+```
+divmod는 작은 숫자를 다룰 때는 a//b, a%b 보다 느리다. 대신, 큰 숫자를 다룰 때는 전자가 후자보다 더 빠르다.   
+*packing 참고 [https://wikidocs.net/22801]
