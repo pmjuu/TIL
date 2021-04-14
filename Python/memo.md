@@ -1,11 +1,35 @@
+연산 수행 시 자료형 주의하기
+```py
+print(4/2, type(4/2))     -> 2.0 float
+print(4//2, type(4//2))   -> 2 int
+```
 ``` py
 data = [1, 9, 2, 3]
 print(data)
 print(data[::-1]) #반대순서로 출력
 ```
 [1, 9, 2, 3]   
-[3, 2, 9, 1]
+[3, 2, 9, 1]   
+   
+### sort() sorted() 차이점
+```py
+a = [1,4,3,2]
 
+#a를 바꾼다.
+a.sort(reverse=True) #내림차순 정렬
+print(a) -> 4,3,2,1 
+
+#a를 바꾸지 않는다.
+print(sorted(a)) -> 1,2,3,4 
+print(a) -> 4,3,2,1
+```
+가운데 정렬 .center()는 자료값을 안 바꾼다...
+```py
+s = '가나다라'
+
+print(s.center(14)) # 가운데 정렬됨
+print(s)            # 정렬 안 되어있음
+```
 ## 프로그래머스 강의 '파이썬을 파이썬 답게'
 정수를 담은 이차원 리스트, mylist 가 solution 함수의 파라미터로 주어집니다.   
 mylist에 들은 각 원소의 길이를 담은 리스트를 리턴하도록 solution 함수를 작성해주세요.
