@@ -66,7 +66,8 @@ divmod는 작은 숫자를 다룰 때는 a//b, a%b 보다 느리다. 대신, 큰
 (Q. 패킹은 인자로 받은 여러개의 값을 하나의 객체로 합쳐서 받는건데, 여기서 말하는 '하나의 객체'는 무조건 튜플인가?)   
 
 ### 이차원 리스트 뒤집기
-zip() : Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables
+zip() : Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables   
+*zip 함수에 서로 길이가 다른 리스트가 인자로 들어오는 경우에는 길이가 짧은 쪽 까지만 이터레이션이 이루어진다.
 ```py
 mylist = [1, 2, 3]
 new_list = [40, 50, 60]
@@ -84,3 +85,31 @@ print(list(map(list, zip(*mylist))))
 [(1, 4, 7), (2, 5, 8), (3, 6, 9)]    #map() 안 쓰면 tuple원소로 들어간다~
 [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 ```
+### 2차원 리스트를 1차원 리스트로 만들기
+```py
+my_list = [[1, 2], [3, 4], [5, 6]]
+
+# 방법 1 - sum 함수
+answer = sum(my_list, [])
+
+# 방법 2 - itertools.chain
+import itertools
+list(itertools.chain.from_iterable(my_list))
+
+# 방법 3 - itertools와 unpacking
+import itertools
+list(itertools.chain(*my_list))
+
+# 방법 4 - list comprehension 이용
+[element for array in my_list for element in array]
+
+# 방법 5 - reduce 함수 이용 1
+from functools import reduce
+list(reduce(lambda x, y: x+y, my_list))
+
+# 방법 6 - reduce 함수 이용 2
+from functools import reduce
+import operator
+list(reduce(operator.add, my_list))
+```
+itertools [https://docs.python.org/3/library/itertools.html#itertools.chain]
