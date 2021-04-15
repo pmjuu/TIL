@@ -113,3 +113,27 @@ import operator
 list(reduce(operator.add, my_list))
 ```
 [itertools.chain](https://docs.python.org/3/library/itertools.html#itertools.chain)
+
+### itertools.permutations() 순열
+```py
+import itertools
+mylist = [1, 2, 3]
+data1 = itertools.permutations(mylist)
+
+print(data1) #값 출력 안 됨
+print(type(data1), end='\n\n')
+
+print(sorted(data1)) #list로 자동 형변환 되고? 값 출력 잘 됨
+print(type(sorted(data1)), end='\n\n')
+
+print(sorted(map(list, itertools.permutations(mylist)))) #원래 tuple이었던 원소를 list로 바꿔서 2차원 list 만들기
+
+# 결과
+# <itertools.permutations object at 0x7f8fa02fc4f0>
+# <class 'itertools.permutations'>
+
+# [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+# <class 'list'>
+
+# [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
+```
