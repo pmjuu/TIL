@@ -66,7 +66,7 @@ divmod는 작은 숫자를 다룰 때는 a//b, a%b 보다 느리다. 대신, 큰
 (Q. 패킹은 인자로 받은 여러개의 값을 하나의 객체로 합쳐서 받는건데, 여기서 말하는 '하나의 객체'는 무조건 튜플인가?)   
 
 ### 이차원 리스트 뒤집기
-zip() : Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables   
+`zip()` : Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables   
 *zip 함수에 서로 길이가 다른 리스트가 인자로 들어오는 경우에는 길이가 짧은 쪽 까지만 이터레이션이 이루어진다.
 ```py
 mylist = [1, 2, 3]
