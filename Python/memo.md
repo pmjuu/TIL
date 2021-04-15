@@ -7,11 +7,11 @@ print(4//2, type(4//2))   -> 2 int
 ```py
 a = [1,4,3,2]
 
-#a를 바꾼다.
+#a를 바꾼다. none 반환
 a.sort(reverse=True) #내림차순 정렬
 print(a) -> 4,3,2,1 
 
-#a를 바꾸지 않는다.
+#a를 바꾸지 않는다. 정렬해서 list 형태로 반환
 print(sorted(a)) -> 1,2,3,4 
 print(a) -> 4,3,2,1
 ```
