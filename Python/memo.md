@@ -112,4 +112,4 @@ from functools import reduce
 import operator
 list(reduce(operator.add, my_list))
 ```
-itertools.chain [https://docs.python.org/3/library/itertools.html#itertools.chain]
+[itertools.chain](https://docs.python.org/3/library/itertools.html#itertools.chain)
