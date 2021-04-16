@@ -137,3 +137,5 @@ print(sorted(map(list, itertools.permutations(mylist)))) #원래 tuple이었던 
 
 # [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
 ```
+[collections.Counter](https://www.daleseo.com/python-collections-counter/)
+
