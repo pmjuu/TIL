@@ -21,7 +21,17 @@ s = '가나다라'
 
 print(s.center(14)) # 가운데 정렬됨
 s.rjust(n)          # 우측 정렬
-print(s)            # 정렬 안 되어있음
+print(s)            # 우측 정렬 안 되어있음
+```
+.replace() 변수에 할당해야함.
+```py
+# 출력 결과 : 광주 인공지능사관학교
+
+str_ai = '괌주 인공지능사관학교'
+
+str_ai = str_ai.replace('괌', '광')
+
+print(str_ai)
 ```
 ## 프로그래머스 강의 '파이썬을 파이썬 답게'
 정수를 담은 이차원 리스트, mylist 가 solution 함수의 파라미터로 주어집니다.   
