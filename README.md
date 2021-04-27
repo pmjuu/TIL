@@ -3,4 +3,5 @@
 [Markdown 사용법2](https://gist.github.com/ihoneymon/652be052a0727ad59601)
 ## Algorithm
 ## Python
-[새로 알게된 내용 틈틈이 기록하기](./Python/memo.md)
+[새로 알게된 내용 틈틈이 기록하기](./Python/memo.md)   
+[JSON](./Python/JSON.md)
