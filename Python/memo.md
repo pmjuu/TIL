@@ -41,6 +41,11 @@ list_ai = ['교', '학', '관', '사', '능', '지', '공', '인', '주', '광']
 
 print(list(reversed(list_ai)))
 ```
+### List와 String은 변환 가능
+```py
+list = str.split( ) : 문자열에서 리스트로
+" ".join( list ) : 리스트에서 문자열으로
+```
 ## 프로그래머스 강의 '파이썬을 파이썬 답게'
 정수를 담은 이차원 리스트, mylist 가 solution 함수의 파라미터로 주어집니다.   
 mylist에 들은 각 원소의 길이를 담은 리스트를 리턴하도록 solution 함수를 작성해주세요.
