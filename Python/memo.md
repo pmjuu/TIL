@@ -157,3 +157,14 @@ print(sorted(map(list, itertools.permutations(mylist)))) #원래 tuple이었던 
 ```
 [collections.Counter](https://www.daleseo.com/python-collections-counter/)
 
+# Q. [] vs list() 차이가 뭘까?
+```py
+nset = {'01','11','21','31'}
+print(nset)
+
+answer = input('삭제하고 싶은 숫자를 입력하세요 : ')
+print('입력한 값 :', set(answer), [answer], list(answer), set(list(answer)), set([answer]), '\n')
+nset = nset - set([answer])
+print('결과 : ', nset)
+```
+![image](https://user-images.githubusercontent.com/50537876/118089777-b5a01180-b403-11eb-8970-f2ec7ea7a0a2.png)
