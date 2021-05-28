@@ -173,3 +173,4 @@ nset = nset - set([answer])
 print('결과 : ', nset)
 ```
 ![image](https://user-images.githubusercontent.com/50537876/118089777-b5a01180-b403-11eb-8970-f2ec7ea7a0a2.png)
+[] : 변수를 리스트 안에 넣는 것 / list() : 변수 자료형을 list로 변환
